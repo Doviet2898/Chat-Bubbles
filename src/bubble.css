@@ -32,15 +32,19 @@
   border-bottom-right-radius: 20px;
 }
 
+.bubble-content::after {
+  background-color: #00a000;
+}
+
 .bubble:last-child .bubble-content:after,
 .bubble:nth-last-child(2) .bubble-content:after {
-  background: #00a000!important;
   border-bottom-right-radius: 15px;
   bottom: 0;
-  content: "";
+  content: '';
   height: 27px;
   left: -15px;
   position: absolute;
   width: 15px;
   z-index: 1;
+  overflow: hidden;
 }
